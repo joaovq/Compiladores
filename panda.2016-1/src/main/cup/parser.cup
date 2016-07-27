@@ -1,0 +1,29 @@
+// panda.cup    -*- mode: Java -*-
+
+import symbol.Symbol;
+
+terminal Long      LITINT;
+terminal Double    LITREAL;
+terminal Boolean   LITBOOL;
+terminal Character LITCHAR;
+terminal String    LITSTRING;
+terminal Symbol    ID;
+terminal           NIL;
+terminal           IF, THEN, ELSE, WHILE, DO, BREAK;
+terminal           VAR, FUNCTION, TYPE, COLON, EQ;
+terminal           LET, IN;
+terminal           LPAREN, RPAREN, LBRACK, RBRACK, LBRACE, RBRACE;
+terminal           COMMA, SEMICOLON;
+terminal           ASSIGN;
+terminal           PLUS, MINUS, TIMES, DIV, MOD, POW;
+terminal           NE, LT, LE, GT, GE;
+terminal           AND, OR;
+terminal           AT;
+terminal           DOT;
+
+non terminal program;
+
+start with program;
+
+program ::=
+;
